@@ -1,6 +1,9 @@
 import os
 import time
 
+# Citation: https://github.com/mn3mnn/fastpeoplesearch.com-scraper Used as the skeleton for the webscraping process
+# Slightly modified to support othe MVC model
+
 from openpyxl import load_workbook
 
 # from selenium import webdriver
@@ -134,6 +137,3 @@ def main():
     wb.close()
     driver.close()
 
-
-if __name__ == "__main__":
-    main()
