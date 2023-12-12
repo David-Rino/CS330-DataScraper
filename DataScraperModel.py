@@ -81,6 +81,8 @@ def extract_phones_from_page(page_source):
         print(str(e))
         return phones
 
+def getOutputName():
+    return xlsx_path
 
 def main():
     driver = open_chrome_with_profile()  # Open Chrome with profile
