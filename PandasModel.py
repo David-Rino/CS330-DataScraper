@@ -10,3 +10,6 @@ class PandasModel:
             print(self.df)
         except Exception as e:
             print(f"Error reading the Excel file: {e}")
+
+    def getDataFrame(self):
+        return self.df

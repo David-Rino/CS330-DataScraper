@@ -13,9 +13,8 @@ if __name__ == "__main__":
     root = tk.Tk()
     userView = View(root)
     userController = Controller(userView, userData)
-
-    userController.runScraper()
-    userController.loadDataFrame()
+    # Used so the View has a way to contact the controller during runtime
+    userView.setController(userController)
     userController.runWindow()
 
 

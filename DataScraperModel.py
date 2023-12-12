@@ -41,6 +41,8 @@ def open_chrome_with_profile():
     driver = uc.Chrome(driver_executable_path=chromedriver_path, options=options)
     return driver
 
+def set_xlsx_file(filename):
+    xlsx_path = filename
 
 def open_xlsx_file():
     # Open Excel file and return the workbook and worksheet

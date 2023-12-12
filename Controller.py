@@ -15,6 +15,12 @@ class Controller:
     def runWindow(self):
         self.userView.openWindow()
 
+    def setFilename(self, filename):
+        model.set_xlsx_file(filename)
+
+    def getDataFrame(self):
+        return self.pandasModel.getDataFrame()
+
 
 
 
