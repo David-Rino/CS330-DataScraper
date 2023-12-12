@@ -117,7 +117,7 @@ def main():
             phones = extract_phones_from_page(driver.page_source)
             if phones:
                 # write phones to Excel file
-                print("Found " + str(len(phones)) + " phones for " + first_name + " " + last_name)
+                #print("Found " + str(len(phones)) + " phones for " + first_name + " " + last_name)
                 write_phones_to_xlsx_file(wb, ws, phones, row)
             else:
                 print("No phones found for " + first_name + " " + last_name)
